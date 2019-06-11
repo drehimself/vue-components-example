@@ -11,6 +11,7 @@
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-clickaway": "^2.2.2",
     "vue-fuse": "^2.1.0"
   },
   "devDependencies": {
