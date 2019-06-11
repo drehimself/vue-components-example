@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <search-focus @keyup="focusSearch" />
-    <div class="relative">
+    <div class="relative w-80">
       <input
         type="text"
         placeholder="Search (Press  &quot;/&quot; to focus)"
