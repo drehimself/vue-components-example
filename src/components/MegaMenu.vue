@@ -32,7 +32,10 @@
               >
                 <svg fill="currentColor" class="text-blue-500 group-hover:text-blue-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui" d="M20 22H4a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h4V8c0-1.1.9-2 2-2h4V4c0-1.1.9-2 2-2h4a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2zM14 8h-4v12h4V8zm-6 4H4v8h4v-8zm8-8v16h4V4h-4z"/></svg>
                 <span class="ml-2">
-                  <span class="block font-bold text-blue-800 group-hover:text-blue-800">Engagement</span>
+                  <span class="block font-bold text-blue-800 group-hover:text-blue-800 flex items-center">
+                    <span>Engagement</span>
+                    <span class="ml-2 bg-yellow-500 text-yellow-800 px-2 py-1 rounded-full uppercase font-bold text-xxs">New</span>
+                  </span>
                   <span class="block text-sm text-gray-600 group-hover:text-blue-800">Measure actions users take</span>
                 </span>
               </a>

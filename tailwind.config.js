@@ -6,6 +6,9 @@ module.exports = {
         '108': '27rem',
         '160': '40rem',
       },
+      fontSize: {
+        xxs: '0.625rem'
+      }
     }
   },
   variants: {
