@@ -20,6 +20,15 @@
             <search-component />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
+            <mega-menu />
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <a href="/#another" class="text-copy-primary hover:text-gray-600">Another</a>
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
+            <a href="/#company" class="text-copy-primary hover:text-gray-600">Company</a>
+          </li>
+          <li class="mr-8 mb-6 lg:mb-0">
             <a href="/#about" class="text-copy-primary hover:text-gray-600">About</a>
 
           </li>
@@ -54,12 +63,14 @@
 <script>
 import SearchComponent from './components/SearchComponent.vue'
 import DropdownMenu from './components/DropdownMenu.vue'
+import MegaMenu from './components/MegaMenu.vue'
 
 export default {
   name: 'app',
   components: {
     SearchComponent,
-    DropdownMenu
+    DropdownMenu,
+    MegaMenu
   }
 }
 </script>
