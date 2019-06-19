@@ -18,9 +18,9 @@
 
     <div class="absolute w-full">&nbsp;</div>
     <transition name="mega-menu-fade">
-      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4 w-160" style="left: -60px">
-        <div class="flex px-8 py-6 border-b -mx-4">
-          <ul class="w-1/2 px-4">
+      <div v-show="isVisible" class="mega-menu absolute normal-case font-normal bg-white shadow-md rounded-lg overflow-hidden border mt-4 w-full lg:w-160 z-30 lg:z-10 left-0 lg:-left-16">
+        <div class="flex flex-col lg:flex-row px-8 py-6 border-b -mx-4">
+          <ul class="w-full lg:w-1/2 px-4">
             <li class="mb-8">
               <a
                 href="#"
@@ -57,7 +57,7 @@
                 </span>
               </a>
             </li>
-            <li class="">
+            <li class="mb-8 lg:mb-0">
               <a
                 href="#"
                 class="flex group"
@@ -75,7 +75,7 @@
               </a>
             </li>
           </ul>
-          <ul class="w-1/2 px-4">
+          <ul class="w-full lg:w-1/2 px-4">
             <li class="mb-8">
               <a
                 href="#"
@@ -133,7 +133,7 @@
           <li class="mb-6">
             <a
               href="#"
-              class="flex items-center group"
+              class="flex lg:items-center group"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="focusNext(false)"
               @keydown.shift.tab="focusPrevious(false)"
@@ -141,14 +141,17 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <svg fill="currentColor" class="text-blue-500 group-hover:text-blue-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui" d="M18 21H7a4 4 0 0 1-4-4V5c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2h2a2 2 0 0 1 2 2v11a3 3 0 0 1-3 3zm-3-3V5H5v12c0 1.1.9 2 2 2h8.17a3 3 0 0 1-.17-1zm-7-3h4a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm0-4h4a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm0-4h4a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2zm9 11a1 1 0 0 0 2 0V7h-2v11z"/></svg>
-              <span class="block ml-2 font-bold text-blue-800 group-hover:text-blue-800">Documentation</span>
-              <span class="block ml-4 text-sm text-gray-600 group-hover:text-blue-800">Start integrating products and tools</span>
+
+              <span class="flex flex-col lg:flex-row lg:items-center">
+                <span class="block ml-2 font-bold text-blue-800 group-hover:text-blue-800">Documentation</span>
+                <span class="block ml-2 lg:ml-4 text-sm text-gray-600 group-hover:text-blue-800">Start integrating products and tools</span>
+              </span>
             </a>
           </li>
           <li class="mb-6">
             <a
               href="#"
-              class="flex items-center group"
+              class="flex lg:items-center group"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="focusNext(false)"
               @keydown.shift.tab="focusPrevious(false)"
@@ -156,14 +159,16 @@
               @keydown.down.exact.prevent="focusNext(true)"
             >
               <svg fill="currentColor" class="text-blue-500 group-hover:text-blue-800" width="24" height="24"><path class="heroicon-ui" d="M17 22a2 2 0 0 1-2-2v-1a1 1 0 0 0-1-1 1 1 0 0 0-1 1v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-3H5a3 3 0 1 1 0-6h1V8a2 2 0 0 1 2-2h3V5a3 3 0 1 1 6 0v1h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a1 1 0 0 0-1 1 1 1 0 0 0 1 1h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3zm3-2v-3h-1a3 3 0 1 1 0-6h1V8h-3a2 2 0 0 1-2-2V5a1 1 0 0 0-1-1 1 1 0 0 0-1 1v1a2 2 0 0 1-2 2H8v3a2 2 0 0 1-2 2H5a1 1 0 0 0-1 1 1 1 0 0 0 1 1h1a2 2 0 0 1 2 2v3h3v-1a3 3 0 1 1 6 0v1h3z"/></svg>
-              <span class="block ml-2 font-bold text-blue-800 group-hover:text-blue-800">Full API Reference</span>
-              <span class="block ml-4 text-sm text-gray-600 group-hover:text-blue-800">Official libraries for our API</span>
+              <span class="flex flex-col lg:flex-row lg:items-center">
+                <span class="block ml-2 font-bold text-blue-800 group-hover:text-blue-800">Full API Reference</span>
+                <span class="block ml-2 lg:ml-4 text-sm text-gray-600 group-hover:text-blue-800">Official libraries for our API</span>
+              </span>
             </a>
           </li>
           <li>
             <a
               href="#"
-              class="flex items-center group"
+              class="flex lg:items-center group"
               @keydown.esc.exact="hideMenu"
               @keydown.tab.exact="hideMenu"
               @keydown.shift.tab="focusPrevious(false)"
@@ -171,8 +176,11 @@
               @keydown.down.exact.prevent=""
             >
               <svg fill="currentColor" class="text-blue-500 group-hover:text-blue-800" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="heroicon-ui" d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4A1 1 0 0 1 6.7 8.7L3.4 12zm7.56 8.24a1 1 0 0 1-1.94-.48l4-16a1 1 0 1 1 1.94.48l-4 16z"/></svg>
-              <span class="block ml-2 font-bold text-blue-800 group-hover:text-blue-800">Open Source</span>
-              <span class="block ml-4 text-sm text-gray-600 group-hover:text-blue-800">Giving back to the community</span>
+
+              <span class="flex flex-col lg:flex-row lg:items-center">
+                <span class="block ml-2 font-bold text-blue-800 group-hover:text-blue-800">Open Source</span>
+                <span class="block ml-2 lg:ml-4 text-sm text-gray-600 group-hover:text-blue-800">Giving back to the community</span>
+              </span>
             </a>
           </li>
         </ul>
