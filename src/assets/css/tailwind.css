@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.v--modal {
+  overflow-y: auto !important;
+}

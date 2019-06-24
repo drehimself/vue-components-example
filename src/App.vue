@@ -30,11 +30,10 @@
             <a href="/#company" class="text-copy-primary hover:text-gray-600">Company</a>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a href="/#about" class="text-copy-primary hover:text-gray-600">About</a>
-
+            <modal-login />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a href="/#contact" class="text-copy-primary hover:text-gray-600">Contact</a>
+            <modal-register />
           </li>
           <li>
             <dropdown-menu />
@@ -65,13 +64,17 @@
 import SearchComponent from './components/SearchComponent.vue'
 import DropdownMenu from './components/DropdownMenu.vue'
 import MegaMenu from './components/MegaMenu.vue'
+import ModalLogin from './components/ModalLogin.vue'
+import ModalRegister from './components/ModalRegister.vue'
 
 export default {
   name: 'app',
   components: {
     SearchComponent,
     DropdownMenu,
-    MegaMenu
+    MegaMenu,
+    ModalLogin,
+    ModalRegister,
   },
   data() {
     return {
