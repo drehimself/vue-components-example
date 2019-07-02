@@ -3,10 +3,10 @@
     <header class="border-t-4 border-blue-700 bg-white z-10 absolute w-full shadow-md">
       <nav class="container mx-auto px-8 flex flex-wrap justify-between items-center py-8">
         <div class="mb-0 lg:mb-6 xl:mb-0">
-          <a href="/" class="font-bold text-xl flex items-end">
+          <router-link to="/" class="font-bold text-xl flex items-end">
             <img src="@/assets/logo.png" alt="logo" class="w-10">
             <span>ue.js</span>
-          </a>
+          </router-link>
         </div>
         <div class="block lg:hidden">
           <button @click="toggleMenu" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
@@ -24,10 +24,10 @@
             <mega-menu />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a href="/#another" class="text-copy-primary hover:text-gray-600">Another</a>
+            <router-link to="/about" class="text-copy-primary hover:text-gray-600">About</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <a href="/#company" class="text-copy-primary hover:text-gray-600">Company</a>
+            <router-link to="/contact" class="text-copy-primary hover:text-gray-600">Contact</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <modal-login />
@@ -42,30 +42,17 @@
       </nav>
     </header>
     <div class="bg-gray-100 min-h-screen pt-40 text-lg">
-      <div class="container mx-auto px-8 lg:px-48">
-        <div class="pb-16">
-          <div class="mb-4 text-2xl font-bold">This is a title</div>
-          <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
-        </div>
-        <div class="pb-16">
-          <div class="mb-4 text-2xl font-bold">This is a title</div>
-          <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
-        </div>
-        <div class="pb-16">
-          <div class="mb-4 text-2xl font-bold">This is a title</div>
-          <p>Lorem ipsum dolor sit amet <a href="#" class="text-blue-600 hover:text-blue-800">consectetur</a> adipisicing elit. Aut dicta incidunt ea ut commodi quidem temporibus illo quia. Et itaque deleniti veniam tempore facere ipsum animi totam culpa minima vel voluptatem adipisci natus blanditiis similique sunt expedita, ex dicta doloremque repellat vitae temporibus. Quisquam quia, accusantium blanditiis architecto facilis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde laborum ut suscipit iure aliquam sapiente doloribus exercitationem nam sint.</p>
-        </div>
-      </div>
+      <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import SearchComponent from './components/SearchComponent.vue'
-import DropdownMenu from './components/DropdownMenu.vue'
-import MegaMenu from './components/MegaMenu.vue'
-import ModalLogin from './components/ModalLogin.vue'
-import ModalRegister from './components/ModalRegister.vue'
+import SearchComponent from '@/components/SearchComponent.vue'
+import DropdownMenu from '@/components/DropdownMenu.vue'
+import MegaMenu from '@/components/MegaMenu.vue'
+import ModalLogin from '@/components/ModalLogin.vue'
+import ModalRegister from '@/components/ModalRegister.vue'
 
 export default {
   name: 'app',
@@ -90,3 +77,5 @@ export default {
 </script>
 
 <style src="@/assets/css/tailwind.css" />
+
+
