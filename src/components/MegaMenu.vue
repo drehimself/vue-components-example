@@ -13,7 +13,7 @@
       @keydown.up.exact.prevent="startArrowKeys"
       @keydown.down.exact.prevent="startArrowKeys"
     >
-      Features
+      {{ $t('nav.features') }}
     </a>
 
     <div class="absolute w-full">&nbsp;</div>

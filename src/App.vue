@@ -3,7 +3,7 @@
     <header class="border-t-4 border-blue-700 bg-white z-10 absolute w-full shadow-md">
       <nav class="container mx-auto px-8 flex flex-wrap justify-between items-center py-8">
         <div class="mb-0 lg:mb-6 xl:mb-0">
-          <router-link to="/" class="font-bold text-xl flex items-end">
+          <router-link :to="`/${$i18n.locale}`" class="font-bold text-xl flex items-end">
             <img src="@/assets/logo.png" alt="logo" class="w-10">
             <span>ue.js</span>
           </router-link>
@@ -24,16 +24,19 @@
             <mega-menu />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <router-link to="/about" class="text-copy-primary hover:text-gray-600">About</router-link>
+            <router-link :to="`/${$i18n.locale}/about`" class="text-copy-primary hover:text-gray-600">About</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
-            <router-link to="/contact" class="text-copy-primary hover:text-gray-600">Contact</router-link>
+            <router-link :to="`/${$i18n.locale}/contact`" class="text-copy-primary hover:text-gray-600">Contact</router-link>
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <modal-login />
           </li>
           <li class="mr-8 mb-6 lg:mb-0">
             <modal-register />
+          </li>
+          <li class="mb-4 lg:mb-0 lg:mr-8">
+            <language-switcher />
           </li>
           <li>
             <dropdown-menu />
@@ -50,6 +53,7 @@
 <script>
 import SearchComponent from '@/components/SearchComponent.vue'
 import DropdownMenu from '@/components/DropdownMenu.vue'
+import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 import MegaMenu from '@/components/MegaMenu.vue'
 import ModalLogin from '@/components/ModalLogin.vue'
 import ModalRegister from '@/components/ModalRegister.vue'
@@ -62,6 +66,7 @@ export default {
     MegaMenu,
     ModalLogin,
     ModalRegister,
+    LanguageSwitcher,
   },
   data() {
     return {
