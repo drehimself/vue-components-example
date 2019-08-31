@@ -11,7 +11,11 @@ module.exports = {
       },
       fontSize: {
         xxs: '0.625rem'
-      }
+      },
+      boxShadow: {
+        'outline-green': '0 0 0 3px rgba(5,202,160, 0.8)',
+      },
+
     }
   },
   variants: {
