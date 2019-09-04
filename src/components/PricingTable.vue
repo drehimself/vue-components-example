@@ -118,11 +118,7 @@
           </td>
         </tr>
         <tr class="bg-gray-200 border border-gray-400">
-          <td class="uppercase tracking-wide font-semibold px-4 py-6">Shipping</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Shipping</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
           <td class="border border-gray-400 text-left px-4 py-6">Free Custom Domain</td>
@@ -175,11 +171,7 @@
           </td>
         </tr>
         <tr class="bg-gray-200 border border-gray-400">
-          <td class="uppercase tracking-wide font-semibold px-4 py-6">Marketing</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td colspan="5" class="uppercase tracking-wide font-semibold px-4 py-6">Marketing</td>
         </tr>
         <tr class="odd:bg-white even:bg-gray-100">
           <td class="border border-gray-400 text-left px-4 py-6">Shipping Discount</td>
