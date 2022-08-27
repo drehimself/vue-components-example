@@ -31,20 +31,6 @@
             <span class="ml-2">English</span>
           </a>
         </li>
-        <!-- <li>
-          <a
-            href="#"
-            class="flex items-center px-3 py-3 hover:bg-gray-200"
-            @keydown.tab.exact="focusNext(false)"
-            @keydown.shift.tab="focusPrevious(false)"
-            @keydown.up.exact.prevent="focusPrevious(true)"
-            @keydown.down.exact.prevent="focusNext(true)"
-            @keydown.esc.exact="hideDropdown"
-          >
-            <svg fill="currentColor" class="text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-11v2h1a3 3 0 0 1 0 6h-1v1a1 1 0 0 1-2 0v-1H8a1 1 0 0 1 0-2h3v-2h-1a3 3 0 0 1 0-6h1V6a1 1 0 0 1 2 0v1h3a1 1 0 0 1 0 2h-3zm-2 0h-1a1 1 0 1 0 0 2h1V9zm2 6h1a1 1 0 0 0 0-2h-1v2z"></path></svg>
-            <span class="ml-2">Billing</span>
-          </a>
-        </li> -->
         <li>
           <a
             href="#"
@@ -58,6 +44,21 @@
           >
             <img src="/flag_fr.svg" alt="english flag" class="h-8 w-8">
             <span class="ml-2">French</span>
+          </a>
+        </li>
+                <li>
+          <a
+            href="#"
+            @click.prevent="setLocale('es')"
+            class="flex items-center px-3 py-3 hover:bg-gray-200"
+            @keydown.shift.tab="focusPrevious(false)"
+            @keydown.up.exact.prevent="focusPrevious(true)"
+            @keydown.down.exact.prevent=""
+            @keydown.tab.exact="hideDropdown"
+            @keydown.esc.exact="hideDropdown"
+          >
+            <img src="/flag_es.svg" alt="spanish flag" class="h-8 w-8">
+            <span class="ml-2">Spanish</span>
           </a>
         </li>
       </ul>
@@ -112,7 +113,6 @@ export default {
       })
       this.hideDropdown()
     }
-
   }
 }
 </script>
